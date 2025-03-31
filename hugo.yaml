@@ -1,0 +1,52 @@
+baseURL: https://laubplusco.net
+languageCode: en-US
+title: Laub plus Co
+theme: PaperMod
+taxonomies:
+  category: category
+  tag: tag
+params:
+  description: Sitecore CMS and .NET developer blog
+  defaultTheme: auto
+  disableThemeToggle: false
+  showShareButtons: true
+  showReadingTime: true
+  showToc: false
+  showBreadCrumbs: true
+  showCodeCopyButtons: true
+  comments: true
+  hideFooter: true
+  label:
+    icon: /lpc-logo.png
+    iconHeight: 125
+    text: ""
+  assets:
+    favicon: /favicon.ico
+    disableHLJS: true
+  placeholder: "Search"
+markup:
+  highlight:
+    codeFences: true
+    guessSyntax: true
+    style: monokai
+  goldmark:
+    renderer:
+      unsafe: true
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+outputFormats:
+  RSS:
+    mediaType: application/rss+xml
+    baseName: feed
+menu:
+  main:
+    - name: All Posts
+      url: "/posts"  
+    - name: Search
+      url: "/search"
+
+
+
