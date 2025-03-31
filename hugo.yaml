@@ -47,6 +47,8 @@ menu:
       url: "/posts"  
     - name: Search
       url: "/search"
-
+caches:
+  images:
+    dir: :cacheDir/images
 
 
